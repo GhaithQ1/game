@@ -6,12 +6,23 @@
 }
 
 header{
-    background-image: url(../images/marko-blazevic-rMCwWG2kSyU-unsplash.jpg);
+    background-image: url(../images/tropical-gef84e8cc3_1920.jpg);
     background-size: cover;
     background-position:center;
     background-clip: border-box;
     height: 100vh;
     position: relative;
+    z-index: 1;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000033;
+    z-index: -1;
 }
 
 header .text{
@@ -24,8 +35,9 @@ header .text{
 
 @media(max-width:991px){
     header .text{
-        flex-direction: column;
+    flex-direction: column;
     justify-content: center;
+    padding: 20px 0 0 0;
     }
 }
 header .text h2{
@@ -33,7 +45,7 @@ header .text h2{
     cursor: pointer;
 }
 header .text h2 span{
-    color: #031b1d;;
+    color: #46714b;
     font-size: 50px;
 }
 @media(max-width:991px){
@@ -161,6 +173,7 @@ nav .content .test button{
     padding: 0 10px;
     cursor: pointer;
     border: 2px solid white;
+    background-color: #00000059;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -177,6 +190,7 @@ nav .content .test button{
     padding: 20px;
     width: fit-content;
     margin: 10px auto;
+    
     }
 }
 nav .content .test button:hover{
