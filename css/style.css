@@ -21,6 +21,13 @@ header .text{
     height: 70px;
     align-items: center;
 }
+
+@media(max-width:991px){
+    header .text{
+        flex-direction: column;
+    justify-content: center;
+    }
+}
 header .text h2{
     font-size: 30px;
     cursor: pointer;
@@ -28,6 +35,11 @@ header .text h2{
 header .text h2 span{
     color: #031b1d;;
     font-size: 50px;
+}
+@media(max-width:991px){
+    header .text h2 span{
+        color: #575757;
+    }
 }
 header .text ul {
     display: flex;
@@ -90,6 +102,12 @@ nav .content{
     color: #fff;
     margin-left: 80px;
 }
+
+@media(max-width:991px){
+    nav .content{
+        margin-left: 10px;
+    }
+}
 nav .content h1{
     font-size: 160px;
     line-height: 1;
@@ -100,6 +118,12 @@ nav .content h1{
     background-position: 0 0;
     animation: move 10s linear infinite;
     -webkit-animation: move 20s linear  infinite;
+}
+
+@media(max-width:991px){
+    nav .content h1{
+        font-size: 90px;
+    }
 }
 @keyframes move{
     100%{
@@ -114,9 +138,19 @@ nav .content h3{
     font-size: 30px;
     padding:  0 0 10px 0;
 }
+@media(max-width:991px){
+    nav .content h3{
+        font-size: 12px;
+    }
+}
 
 nav .content .test{
     display: flex;
+}
+@media(max-width:991px){
+    nav .content .test{
+        flex-direction: column;
+    }
 }
 
 nav .content .test button{
@@ -138,6 +172,13 @@ nav .content .test button{
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
+@media(max-width:991px){
+    nav .content .test button{
+    padding: 20px;
+    width: fit-content;
+    margin: 10px auto;
+    }
+}
 nav .content .test button:hover{
     background-color: #fff;
     color: black;
@@ -156,13 +197,27 @@ nav .content .test p{
     font-size: 18px;
     line-height: 1.5;
 }
-
+@media(max-width:991px){
+    nav .content .test p{
+        text-align: center;
+    }
+}
 
 
 .icon{
     position: absolute;
     right: 5%;
     bottom: 8%;
+}
+
+@media(max-width:991px){
+    .icon{
+            position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    bottom: 10px;
+    }
 }
 
 .icon img{
