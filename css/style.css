@@ -193,10 +193,23 @@ nav .content .test button{
     
     }
 }
+
+a{
+    text-decoration: none;
+    color: white;
+        transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
 nav .content .test button:hover{
     background-color: #fff;
     color: black;
-
+}
+nav .content .test button:hover a{
+    color: black;
 }
 
 
@@ -253,4 +266,5 @@ nav .content .test p{
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
 }
+
 
